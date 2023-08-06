@@ -19,7 +19,7 @@ def parseImageUrls(classes,location,source):
     for a in soup.findAll(attrs={'class':classes}):
         name = a.find(location)
         if name not in results:
-            results.append(BeautifulSoup.name.get(source))
+            results.append(name.get(source))
             
 
 
